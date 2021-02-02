@@ -56,7 +56,7 @@ public class PlayerController : MonoBehaviour
         grounded = false;
     }
 
-    void OnTriggerEnter(Collider other)
+    private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Pick Up"))
         {
